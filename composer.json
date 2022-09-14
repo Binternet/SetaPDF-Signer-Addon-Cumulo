@@ -13,8 +13,7 @@
         "php": ">=7.2",
         "ext-json": "*",
         "psr/http-client": "^1.0",
-        "psr/http-factory": "^1.0",
-        "setasign/setapdf-signer_eval_ioncube_php7.1": "^2.40"
+        "psr/http-factory": "^1.0"
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^7.0",
