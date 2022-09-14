@@ -1,6 +1,6 @@
 # SetaPDF-Signer-Addon-Cumulo
 This package offers a module for the [SetaPDF-Signer](https://www.setasign.com/signer) component that allow you to use 
-the [Cumulo API](https://cumulo.jupiter.isolvtech.com:7443/docs/api.html) to digital sign PDF documents in pure PHP.
+the [Cumulo API](https://docs.cumulokey.net/) to digital sign PDF documents in pure PHP.
 
 
 ## Requirements
@@ -52,10 +52,27 @@ and execute `composer update`. You need to define the `repository` to evaluate t
 By default, this packages depends on a licensed version of the [SetaPDF-Signer](https://www.setasign.com/signer)
 component. If you want to use it with a trial version please use following in your composer.json:
 
+For PHP 7.2 - 7.4:
 ```json
 {
     "require": {
-        "setasign/setapdf-signer-addon-cumulo": "dev-trial"
+        "setasign/setapdf-signer-addon-cumulo": "dev-trial",
+        "setasign/setapdf-signer_eval_ioncube_php7.1": "^2.40"        
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://www.setasign.com/downloads/"
+        }
+    ]
+}
+```
+For PHP 8.1:
+```json
+{
+    "require": {
+        "setasign/setapdf-signer-addon-cumulo": "dev-trial",
+        "setasign/setapdf-signer_eval_ioncube_php8.1": "^2.40"        
     },
     "repositories": [
         {
